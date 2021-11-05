@@ -89,3 +89,14 @@ def apartado_c_2():
         vector.append(res)
         x += 1
     return vector
+
+def fibonacci(n):
+    if(n == 1):
+        return 1
+    if(n == 0):
+        return 0
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+    
+def apartado_c_3():
+    return [fibonacci(x) for x in range(0,15)]
